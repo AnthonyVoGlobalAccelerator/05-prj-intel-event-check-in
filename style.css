@@ -25,11 +25,12 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       135deg,
-  rgba(0, 104, 181, 0.9) 0%,
-  rgba(235, 126, 31, 0.88) 55%,
-  rgba(193, 75, 24, 0.92) 100%
+      rgba(0, 104, 181, 0.9) 0%,
+      rgba(235, 126, 31, 0.88) 55%,
+      rgba(193, 75, 24, 0.92) 100%
     ),
     url("img/bg.jpg");
   background-size: cover;
@@ -258,6 +259,16 @@ button .fas {
   color: #9a431b;
 }
 
+.celebration-message {
+  display: none;
+  padding: 14px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #fff3cd;
+  color: #8a4b08;
+  font-weight: 700;
+}
+
 /* Counter */
 #attendeeCount {
   color: #d9631f;
@@ -346,6 +357,35 @@ select {
   font-size: 15px;
   font-weight: 500;
   color: #475569;
+}
+
+.attendee-list-section {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #f1f5f9;
+  text-align: left;
+}
+
+.attendee-list-section h3 {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+#attendeeList {
+  display: grid;
+  gap: 8px;
+  padding-left: 20px;
+  color: #475569;
+}
+
+#attendeeList:empty::after {
+  content: "No attendees checked in yet.";
+  color: #94a3b8;
+  list-style: none;
+  margin-left: -20px;
+  text-align: center;
 }
 
 /* Mobile responsive */
